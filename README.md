@@ -2,17 +2,8 @@
 
 # Steps to setup test automation are as follows:
 # Setup adb:
-Download the “SDK Platform-Tools for Mac” from:
-https://developer.android.com/studio/releases/platform-tools.html
+https://www.moellerstudios.org/how-to-obtain-and-install-adb-on-a-mac/
 
-- Unzip the downloaded file by double-clicking on it.
-- Move the unzipped folder (i.e., “platform-tools”) to a useful location (e.g., I put it in a folder called “android-sdk-macosx” in a folder called “SDKs” in my home directory: ~/SDKs/android-sdk-macosx/platform-tools/).
- -Add “platform-tools” to your PATH variable by invoking the following in the Terminal (make sure to change the file path to reflect where you placed the folder “platform-tools” on your system):
-      echo 'export PATH=$PATH:~/SDKs/android-sdk-macosx/platform-tools/' >> ~/.bash_profile
--Execute the following command to reload your bash profile (this applies the change to the PATH variable):
-      source ~/.bash_profile
-Note: The PATH variable is the search path for commands. It is a list of directories, each separated by a colon, in which the shell looks for commands. To see what values are currently in your PATH variable, use the following:
-      echo $PATH
 To see if everything is working, connect an Android device and enter the following in the Terminal:
       adb devices
 It should return something like this (if you have one Android device attached):
