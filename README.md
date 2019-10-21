@@ -1,7 +1,7 @@
 # vasundhara-singh
 
 # Steps to setup test automation are as follows:
-## Setup adb:
+# Setup adb:
 Download the “SDK Platform-Tools for Mac” from:
 https://developer.android.com/studio/releases/platform-tools.html
 
@@ -18,7 +18,8 @@ To see if everything is working, connect an Android device and enter the followi
 It should return something like this (if you have one Android device attached):
     List of devices attached
     200804114c28b9e	device . -----example
-# 200804114c28b9e is the deviceName that needs to be updated in test scripts within AppiumTest> Utility> AppiumDriverBuilder.js
+
+200804114c28b9e is the deviceName that needs to be updated in test scripts within AppiumTest> Utility> AppiumDriverBuilder.js
 
 # “Enable adb debugging on your device”:
 To use adb with a device connected over USB, you must enable USB debugging in the device system settings, under Developer options.
